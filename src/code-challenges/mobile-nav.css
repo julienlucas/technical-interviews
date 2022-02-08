@@ -1,0 +1,61 @@
+.sidebar {
+  position: absolute;
+  background-color: #000;
+  height: 100%;
+  left: -100%;
+  transition: left 0.2s ease-in;
+}
+
+.sidebar--visible {
+  left: 0;
+}
+
+.sidebar ul {
+  list-style: none;
+  margin: 0;
+  padding: 72px;
+  position: relative;
+}
+
+.sidebar li {
+  margin: 12px 0;
+}
+
+.sidebar a {
+  color: #000;
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-family: "Dank mono", monospace;
+  color: #fff;
+}
+
+.sidebar a:hover,
+.sidebar a:focus {
+  text-decoration: underline;
+}
+
+#open-menu {
+  border: 2px solid #000;
+  background: none;
+  font-size: 1.4rem;
+  font-family: "Dank Mono", monospace;
+  padding: 6px 24px;
+  cursor: pointer;
+  position: fixed;
+  right: 24px;
+  top: 24px;
+}
+
+#close-menu {
+  background: none;
+  border: none;
+  transform: rotate(45deg);
+  font-size: 72px;
+  font-family: "Dank mono", monospace;
+  color: #fff;
+  cursor: pointer;
+  position: absolute;
+  right: 6px;
+  top: -12px;
+  z-index: 2;
+}
